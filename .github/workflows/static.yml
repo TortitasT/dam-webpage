@@ -33,13 +33,13 @@ jobs:
 
       - uses: denoland/setup-deno@v1
         with:
-          deno-version: "1.8.2"
+          deno-version: "1.31.1"
 
       - name: Install htemele
         run: git clone https://github.com/TortitasT/htemele.git
 
       - name: Compile with htemele
-        run: deno run --allow-all --unstable htemele/main.ts index.html
+        run: deno run --allow-net --allow-read --allow-write --unstable htemele/main.ts index.html
 
       - name: Setup Pages
         uses: actions/configure-pages@v3
