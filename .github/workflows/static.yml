@@ -38,8 +38,8 @@ jobs:
       - name: Install htemele
         run: git clone https://github.com/TortitasT/htemele.git
 
-      - name: Compile htemele
-        run: deno run --allow-all --unstable htemele/htemele.ts index.html
+      - name: Compile with htemele
+        run: deno run --allow-all --unstable htemele/main.ts index.html
 
       - name: Setup Pages
         uses: actions/configure-pages@v3
