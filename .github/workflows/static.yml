@@ -31,10 +31,9 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v3
 
-      - name: Install Deno
-        uses: denolib/setup-deno@v1
+      - uses: denoland/setup-deno@v1
         with:
-          deno-version: v1.8.2
+          deno-version: "1.8.2"
 
       - name: Install htemele
         run: git clone https://github.com/TortitasT/htemele.git && cd htemele && deno install --allow-read --allow-write --allow-net --allow-env --allow-run --unstable --no-check --force --name htemele main.ts
@@ -49,7 +48,7 @@ jobs:
         uses: actions/upload-pages-artifact@v1
         with:
           # Upload entire repository
-          path: "."
+          path: "./dist"
 
       - name: Deploy to GitHub Pages
         id: deployment
