@@ -1,0 +1,25 @@
+.animations__underline {
+  display: inline-block;
+  position: relative;
+  color: var(--theme-color);
+
+  &::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 4px;
+    bottom: -0.25em;
+    left: 0;
+    background-color: var(--theme-color);
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+
+    border-radius: var(--border-radius);
+  }
+
+  &:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+}
