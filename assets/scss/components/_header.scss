@@ -1,0 +1,59 @@
+.header {
+  position: fixed;
+  top: 0;
+
+  width: 100%;
+
+  display: flex;
+  justify-content: flex-end;
+
+  padding: 0.5em 1em;
+
+  opacity: 0.75;
+
+  transition: opacity 0.5s;
+
+  &:hover {
+    opacity: 0.95;
+  }
+
+  ul {
+    padding: 1em;
+    margin: 0;
+
+    li {
+      list-style: none;
+    }
+
+    @media (max-width: 400px) {
+      display: none;
+    }
+
+    background-color: var(--header-bg-color);
+
+    border-right: 0.5em solid var(--theme-color);
+
+    border-radius: var(--border-radius);
+
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+  }
+
+  &__menu-button {
+    display: none;
+
+    @media (max-width: 400px) {
+      display: flex;
+    }
+
+    background-color: transparent;
+    border: none;
+
+    border-radius: var(--border-radius);
+
+    padding: 0.5em;
+
+    font-size: 1.5em;
+  }
+}

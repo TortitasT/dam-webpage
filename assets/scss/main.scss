@@ -1,0 +1,59 @@
+@import 'fonts';
+@import 'variables';
+
+@import 'icons';
+
+@import 'components/header';
+
+@import 'pages/page';
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-snap-type: y mandatory;
+
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+
+  font-family: var(--fonts-regular);
+  font-size: var(--font-size);
+
+  background-color: var(--bg-color);
+  color: var(--fg-color);
+
+  a {
+    font-family: var(--fonts-special);
+
+    color: var(--theme-color);
+
+    text-decoration: none;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: var(--fonts-special);
+
+    margin: 0;
+  }
+
+  p {
+    margin: 0;
+  }
+
+  button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
