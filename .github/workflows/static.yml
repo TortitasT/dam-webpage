@@ -36,7 +36,7 @@ jobs:
           deno-version: "1.8.2"
 
       - name: Install htemele
-        run: git clone https://github.com/TortitasT/htemele.git && cd htemele && deno install --allow-read --allow-write --allow-net --allow-env --allow-run --unstable --no-check --force --name htemele main.ts
+        run: git clone https://github.com/TortitasT/htemele.git && deno install --allow-all htemele/main.ts
 
       - name: Compile htemele
         run: htemele index.html
