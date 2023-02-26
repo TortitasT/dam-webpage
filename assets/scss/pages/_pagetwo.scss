@@ -1,0 +1,10 @@
+.page--two {
+  display: flex;
+  gap: 1em;
+
+  >div {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+  }
+}
