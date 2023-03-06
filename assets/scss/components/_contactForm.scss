@@ -1,0 +1,17 @@
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+
+  textarea {
+    font-size: 0.75em;
+
+    padding: 0.5em;
+
+    font-family: var(--fonts-regular);
+
+    width: 100%;
+
+    resize: none;
+  }
+}

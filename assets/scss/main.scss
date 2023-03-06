@@ -6,15 +6,21 @@
 @import 'animations';
 
 @import 'components/header';
+@import 'components/contactForm';
+@import 'components/field';
 
 @import 'pages/page';
 @import 'pages/pageone';
 @import 'pages/pagetwo';
+@import 'pages/pagefour';
 
 *,
 *::before,
 *::after {
   box-sizing: border-box;
+
+  padding: 0;
+  margin: 0;
 }
 
 main {
