@@ -51,6 +51,15 @@
       display: flex;
     }
 
+    .icon {
+      width: 1em;
+      height: 1em;
+
+      svg {
+        fill: var(--theme-color);
+      }
+    }
+
     background-color: transparent;
     border: none;
 
