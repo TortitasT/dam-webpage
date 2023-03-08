@@ -11,4 +11,9 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
+  h1,
+  h2 {
+    font-size: clamp(1.5em, 10vw, 3em);
+  }
 }
